@@ -2,11 +2,12 @@
 const baseUrl = window.location.pathname.replace(/\/$/, ''); // Adjust base URL dynamically
 
 const quizItems = [
-    { image: '/simple-image-quiz/images/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%8A%E1%85%B5.jpeg', answer: '알씨' },
-    { image: '/simple-image-quiz/images/%E1%84%80%E1%85%A9%E1%84%8B%E1%85%A3%E1%86%BC%E1%84%8B%E1%85%B5.jpeg', answer: '고양이' },
-    { image: '/simple-image-quiz/images/%E1%84%87%E1%85%A5%E1%86%BD%E1%84%81%E1%85%A9%E1%86%BE.jpeg', answer: '벚꽃' },
-    { image: '/simple-image-quiz/images/%E1%84%80%E1%85%A2.jpeg', answer: '개' },
+    { image: '/simple-image-quiz/images/%EC%95%8C%EC%94%A8.jpeg', answer: '알씨' },
+    { image: '/simple-image-quiz/images/%EA%B3%A0%EC%96%91%EC%9D%B4.jpeg', answer: '고양이' },
+    { image: '/simple-image-quiz/images/%EB%B2%9A%EA%BD%83.jpeg', answer: '벚꽃' },
+    { image: '/simple-image-quiz/images/%EA%B0%9C.jpeg', answer: '개' },
 ];
+
 
 // Initialize variables
 let currentIndex = 0;

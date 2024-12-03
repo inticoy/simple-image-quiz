@@ -1,5 +1,6 @@
 import os
 import urllib.parse
+import unicodedata
 
 # Define folder and script paths
 images_folder = "images"
@@ -18,10 +19,12 @@ image_files = [
 # Generate JavaScript array with percent-encoded paths and answers
 quiz_items_js = "const quizItems = [\n"
 for image_file in image_files:
-    # Percent-encode the file name for URL safety
-    encoded_image = urllib.parse.quote(image_file)
+    # Normalize file name to NFC
+    normalized_name = unicodedata.normalize('NFC', image_file)
+    # Percent-encode the normalized file name for URL safety
+    encoded_image = urllib.parse.quote(normalized_name)
     # Remove the file extension to set the answer
-    file_name_without_extension = os.path.splitext(image_file)[0]
+    file_name_without_extension = os.path.splitext(normalized_name)[0]
     quiz_items_js += f"    {{ image: '{base_url}/images/{encoded_image}', answer: '{file_name_without_extension}' }},\n"
 quiz_items_js += "];\n\n"
 
