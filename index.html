@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #quiz-container {
+            margin-top: 50px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+        }
+        #start-game {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Quiz Game</h1>
+    <button id="start-game">Start Game</button>
+    <div id="quiz-container" style="display: none;">
+        <img id="quiz-image" src="" alt="Image will be shown here">
+        <p id="question"></p>
+        <input type="text" id="answer-input" placeholder="Type your answer here">
+        <button id="submit-answer">Submit</button>
+    </div>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
