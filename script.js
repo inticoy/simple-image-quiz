@@ -4,7 +4,7 @@ const baseUrl = window.location.pathname.replace(/\/$/, ''); // Adjust base URL 
 const quizItems = [
     { image: `${baseUrl}/images/알씨.jpeg`, answer: '알씨' },
     { image: `${baseUrl}/images/고양이.jpeg`, answer: '고양이' },
-    { image: `${baseUrl}/images/벚꽃.jpeg`, answer: '벚꽃' }
+    { image: `${baseUrl}/images/벚꽃.jpeg`, answer: '벚꽃' },
     { image: `${baseUrl}/images/개.jpeg`, answer: '개' }
 ];
 
